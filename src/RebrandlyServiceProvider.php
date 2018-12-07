@@ -1,5 +1,5 @@
 <?php
-namespace Jorge\Rebrandly;
+namespace Jorgv\Rebrandly;
 
 use Illuminate\Support\ServiceProvider;
 
