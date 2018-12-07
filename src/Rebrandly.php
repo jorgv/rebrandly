@@ -25,9 +25,9 @@ class Rebrandly
     /**
      * @param string $apiKey
      */
-    public function __construct($apiKey)
+    public function __construct()
     {
-        $this->http = new Http($apiKey);
+        $this->http = new Http(config('rebrandly.key'));
     }
     /**
      * Ensures all required fields for the requested action exist on a $link
