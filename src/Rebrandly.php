@@ -64,7 +64,11 @@ class Rebrandly
         if (!isset($domain)) {
             $domain = config('rebrandly.domain');
         }
-        $linkArray = [$slashtag, $destination, $domain];
+        $linkArray = [
+            'destination'   => $destination,
+            'slashtag'      => $slashtag,
+            'domain'        => $domain
+        ];
         $this->validate('create', $linkArray);
         $response = $this->http->post($target, $linkArray);
         return $response;
