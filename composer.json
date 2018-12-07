@@ -1,5 +1,5 @@
 {
-    "name": "jorgv/Rebrandly",
+    "name": "jorgv/rebrandly",
     "description": "A Laravel rebrandly wrapper",
     "require": {
         "php": ">=7.0"
