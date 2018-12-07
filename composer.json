@@ -1,0 +1,33 @@
+{
+    "name": "jorgv/Rebrandly",
+    "description": "A Laravel rebrandly wrapper",
+    "require": {
+        "php": ">=7.0"
+    },
+    "license": "MIT",
+    "keywords": ["rebradnly", "laravel"],
+    "authors": [
+        {
+            "name": "Jorgv",
+            "email": "jorge@avantpage.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Jorgv\\Rebrandly\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Jorgv\\Rebrandly\\RebrandlyServiceProvider"
+            ],
+            "aliases": {
+                "ShortLink": "Jorgv\\Rebrandly\\Facades\\Rebrandly"
+            }
+        }
+    },
+    "repositories": {
+        "packagist": { "url": "https://packagist.org", "type": "composer" }
+    }
+}
