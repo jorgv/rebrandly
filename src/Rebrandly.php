@@ -145,12 +145,7 @@ class Rebrandly
     {
         $target = 'links/';
         $response = $this->http->get($target, $filters);
-        $links = [];
-        foreach ($response as $linkArray) {
-            $link = LinkModel::import($linkArray);
-            array_push($links, $link);
-        }
-        return $links;
+        return $response;
     }
     /**
      * Count links meeting some criteria
