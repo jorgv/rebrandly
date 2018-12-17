@@ -27,7 +27,7 @@ class Rebrandly
      */
     public function __construct()
     {
-        $this->http = new Http(config('rebrandly.key'));
+        $this->http = new Http(config('services.rebrandly.key'));
     }
     /**
      * Ensures all required fields for the requested action exist on a $link
@@ -62,7 +62,7 @@ class Rebrandly
     {
         $target = 'links';
         if (!isset($domain)) {
-            $domain = config('rebrandly.domain');
+            $domain = config('services.rebrandly.domain');
         }
         $linkArray = [
             'destination'   => $destination,
