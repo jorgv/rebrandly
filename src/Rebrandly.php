@@ -67,7 +67,9 @@ class Rebrandly
         $linkArray = [
             'destination'   => $destination,
             'slashtag'      => $slashtag,
-            'domain'        => $domain
+            'domain'        => [
+                            'fullName'  =>  $domain
+            ]
         ];
         $this->validate('create', $linkArray);
         $response = $this->http->post($target, $linkArray);
